@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon</title>
+
+    <style>
+        #main {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #board {
+            background-color: dimgrey;
+            height: 400px;
+            width: 400px;
+            border-radius: 200px;
+            position: absolute;
+
+        }
+
+        #face {
+            background-color: khaki;
+            height: 300px;
+            width: 300px;
+            border-radius: 25%;
+            position: relative;
+            top: 50px;
+            left: 50px;
+           
+
+        }
+        .hairs{
+            background-color: black;
+            height: 110px;
+            width: 190px;
+            border-radius: 100px 100px 0 0;
+            position: absolute;
+            top: -14px;
+            left: -20px;
+            z-index: 0;
+
+        }
+        #hairsleft {
+            
+            transform: rotate(-15deg);
+            position: absolute;
+            
+           
+            
+            
+        }
+        #hairsright {
+            transform: rotate(15deg);
+            margin-left: 150px;
+            margin-right: 0;
+
+        }
+        #triangle{
+            
+            height: 0;
+            width: 0;
+            border-left: 50px solid transparent; 
+            border-right: 50px solid transparent;
+            border-bottom: 120px solid black;
+            position: absolute;
+            left: 100px;
+            top: -60px;
+            
+        }
+        .eyebrow{
+            height: 30px;
+            width: 60px;
+            border: 10px solid black;
+            position: absolute;
+            border-top-left-radius: 110%;
+            border-top-right-radius:110% ;
+            border-bottom: 0;
+
+        }
+        #eyebrowleft {
+            left: 50px;
+            top: 100px;
+
+        }
+        #eyebrowright {
+            left: 180px;
+            top: 100px;
+
+            
+        }
+
+
+        .eye{
+            height: 90px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+        }
+        #eyeleft{
+
+            top: 125px;
+            left: 60px;
+
+        }
+        #eyeright {
+            top: 125px;
+            left:190px ;
+
+        }
+
+        .iris{
+            height: 50px;
+            width: 30px;
+            background-color:white;
+            border-radius: 50%;
+        }
+        #irisleft{
+            position: relative;
+            z-index: 1;
+            top: 30px;
+            left: 17px;
+
+
+        }
+        #irisright{
+            position: relative;
+            z-index: 1;
+            top: 30px;
+            left: 15px;
+
+
+        }
+
+
+        #nose {
+            height: 18px;
+            width: 80px;
+            border-radius:50% ;
+            background-color: black;
+            position: absolute;
+            top: 200px;
+            left: 115px;
+            box-shadow:5px 5px 5px grey;
+        }
+        #mouth {
+
+            height: 40px;
+            width: 100px;
+            background-color: rgb(207, 204, 204);
+            position: absolute;
+            border-radius: 0 0 50px 50px;
+            top: 230px;
+            left: 105px;
+
+
+        }
+        .ear{
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            background-color: khaki;
+            position: absolute;
+        }
+        #earleft {
+            left:-50px;
+            top: 140px;
+        }
+
+        #earright{
+            left:288px;
+            top:140px
+        }
+
+        .earhole {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+        }
+        #hole1 {
+            top: 15px;
+            left: 17px;
+
+        }
+        #hole2{
+            top:15px;
+            left: 17px
+
+        }
+
+
+        #neck {
+             background-color: khaki ;
+             height: 130px;
+             width: 130px;
+             border-radius: 50%;
+             position: absolute;
+             left: 105px;
+             top:-25px
+
+        }
+        #shirt{
+            height: 180px;
+            width: 330px;
+            background-color: chartreuse;
+            position: absolute;
+            top: 349px;
+            left: 35px;
+            border-radius: 22%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id = "main">
+        <div id="board">
+            <div id="face">
+                <div class="hairs" id="hairsleft"></div>
+                <div class="hairs" id="hairsright"></div>
+                <div id="triangle"></div>
+                <div class="eyebrow" id="eyebrowleft">
+                    <div class="iris" id="irisleft"></div>
+                </div>
+                <div class="eyebrow" id="eyebrowright">
+                    <div class="iris" id="irisright"></div>
+                </div>
+                <div class="eye" id="eyeleft"></div>
+                <div  class="eye" id="eyeright"></div>
+                <div class="ear" id="earleft">
+                    <div class="earhole" id = "hole1"></div>
+                </div>
+                <div class="ear" id="earright">
+                    <div class="earhole" id="hole2"></div>
+                </div>
+                <div id="nose"></div>
+                <div id= "mouth"></div>
+            </div>
+            <div id="shirt">
+                <div id="neck"></div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
